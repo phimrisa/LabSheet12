@@ -9,6 +9,7 @@ public class AccountTransaction extends BankAccount implements Transactionable{
     public AccountTransaction(String accId){
         super(accId);
     }
+    
     public boolean hasAccountId() throws FileNotFoundException {
         File filename = new File(getFilename());
         Scanner scanner = new Scanner(filename);
@@ -27,6 +28,7 @@ public class AccountTransaction extends BankAccount implements Transactionable{
         scanner.close();
         return false;
     }
+    
     @Override
     public void deposit(double amount) {
         setAccBalance(getAccBalance()+amount);
