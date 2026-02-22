@@ -30,13 +30,11 @@ public class BankSystem2 {
                 if (menu == 1) {
                     System.out.print("Enter amount to deposit: ");
                     deposit_amount = scanner.nextInt();
-
                     account.deposit(deposit_amount);
                     System.out.println("You balance = " + account.checkBalance());
                 } else if (menu == 2) {
                     System.out.print("Enter amount to withdraw: ");
                     deposit_amount = scanner.nextInt();
-
                     account.withdraw(deposit_amount);
                     System.out.println("You balance = " + account.checkBalance());
                 } else if (menu == 3) {
@@ -44,7 +42,6 @@ public class BankSystem2 {
                 } else if (menu == 4) {
                     is_loop = false;
                 }
-
                 System.out.println();
             }
         } else {
