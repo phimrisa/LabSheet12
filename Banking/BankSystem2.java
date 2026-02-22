@@ -44,7 +44,8 @@ public class BankSystem2 {
                 }
                 System.out.println();
             }
-        } else {
+        } 
+        else {
             System.out.println("Bank account not found...");
         }
     }
